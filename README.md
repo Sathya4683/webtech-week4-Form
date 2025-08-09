@@ -53,6 +53,6 @@ You can deploy this form easily with GitHub Pages:
 
 - Phone number validation assumes a 10-digit number without country code or formatting.
 - Age and DOB validations are linked — either field alone can be used to verify age, but both must be consistent.
-- You can customize the CSS classes for error styling in your `style2.css`.
+- You can customize the CSS classes for error styling in your `style.css`.
 
 ---
