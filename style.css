@@ -1,0 +1,103 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Body styles: center the form vertically and horizontally */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Labels styling */
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Container div for each input and label */
+div {
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-top: 10px; /* spacing between fields */
+}
+
+/* Inputs styling */
+input {
+    height: 25px;
+    padding: 4px 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+/* Inputs get a blue border on focus for better UX */
+input:focus {
+    outline: none;
+    border-color: lightskyblue;
+}
+
+/* Heading for the form */
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Main form container box */
+.form-container {
+    padding: 30px 20px 20px 20px;
+    background-color: white;
+    /* Fixed box shadow with subtle shadow */
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 300px;
+}
+
+/* Submit button styling */
+button {
+    width: 300px;
+    margin-top: 10px;
+    padding: 5px 0; /* vertical padding, horizontal handled by width */
+    color: white;
+    background-color: lightskyblue;
+    border: none;
+    border-radius: 4px;
+    height: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: deepskyblue;
+}
+
+/* Error message text styling */
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 3px;
+    min-height: 16px; /* Reserve space so layout doesn't shift */
+}
+
+/* Red border style added by JS to inputs with validation errors */
+.error-border {
+    border-color: red !important;
+    box-shadow: 0 0 5px red;
+}
+
+/* Optional: Make the input background slightly pinkish on error for clarity */
+.error-border:focus {
+    background-color: #ffe6e6;
+    border-color: red;
+}
